@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    color: royalblue;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.h-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-con ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 4rem;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+}
+li.selected{   
+    border-bottom: 4px solid royalblue;
+    height: 40px;
+}
+
+.logo{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* main */
+
+.main{
+    margin-top: 4rem;
+}
+
+.m-con{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.m-text,.m-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.m-img{
+    width: 500px;
+    height: 500px;
+}
+
+.m-text p{
+    font-size:4em;
+    font-weight: 500;
+}
+
+.m-text span{
+    color: royalblue;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.25rem 1.7rem;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 500px;
+    background-color:rgb(74, 119, 255);
+    color:white;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display:inline-block;
+    padding: 20px;
+}
+
+.w-con .card img{
+    width: 300px;
+}
+
+.w-con .card p{
+    font-weight: 500;
+    font-size: 19px;
+    margin: 5px;
+}
+
+.btn-card{
+    display: inline-block;
+    border: 3px solid royalblue;
+    background-color: transparent;
+    padding: 0.25rem 1rem;
+    margin-top: 5px;
+    color: royalblue;
+}
+
+.btn-card:hover{
+    color:white;
+    background-color: royalblue;
+}
