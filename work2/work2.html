@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="room" src="./room365.jpg">
+        <img id="man"  src="./boy.jpg">
+        <audio id="flap" src="./flap.mp3"></audio>
+      </a-assets>
+      
+      <a-text value="WORK 2" position="0 -5 -2.2" animation="property: position; to: 0 1.5 -2.2; dur: 2000; easing: linear; loop: false"></a-text>
+      <a-text value="Peerapon loasuangkoon 653380107-4" position="-5 1 -2"
+      animation="property: position; to: -1 1 -2.2; dur: 8000; easing: linear; loop: ture"
+      ></a-text>
+      <a-sky color="#ECFFFF" src="#room" radius="1222"></a-sky>
+      <a-box position="0 0 0" 
+         width="1" height="1"
+         animation="property: position; to: 0 1 -5; dur: 2000; easing: linear" 
+         animation__2="property: rotation;; to: 0 360 0; dur: 5000; loop: true;" 
+         src="#man"
+      ></a-box>
+
+      <a-entity position="0 0 7">
+        <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera>
+      </a-entity>
+
+      <a-cylinder color="#0088FF" height="5" position="-2 2.5 0"
+                sound="src: #flap;
+                        on: click;
+                        volume: 1;
+                        refDistance: 4;
+                        rolloffFactor: 4;">
+                <a-entity sound="src: #flap; autoplay: false" position="1.396 1.525 0"></a>
+      </a-cylinder>
+      <a-sphere color="#00AA00" radius="0.25" position="-0.5 1 0" play></a-sphere>
+      <a-sphere color="#AA0000" radius="0.25" position="0.5 1 0" stop></a-sphere>
+    </a-scene>
+
+  </body>
+</html>
