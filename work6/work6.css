@@ -1,0 +1,8 @@
+.logo{
+    width: 6rem;
+    height: 6rem;
+    background-image: url(./1175544_firebase_google_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
